@@ -1,0 +1,10 @@
+% Transformacion Exponencial
+
+clear all
+I = imread('imgs/.jpg');
+whos I % Retorna metadata de la imagen en este caso
+subplot(2,1,1); imshow(I);title('Original image')
+
+%Transformacion Exponencial
+G = imadjust(I,[],[],2);
+subplot(2,1,2); imshow(G); title('Pow Transform')
